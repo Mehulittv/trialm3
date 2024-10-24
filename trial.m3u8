@@ -1,7 +1,9 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",LANGUAGE="eng",NAME="English",DEFAULT=YES,URI="https://prime.vflix.xyz/cors?url=https://s01.nm-cdn.top/files/81647016/a/2/2.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",LANGUAGE="hin",NAME="Hindi",DEFAULT=NO,URI="https://prime.vflix.xyz/cors?url=https://s01.nm-cdn.top/files/81647016/a/6/6.m3u8"
 
-#EXT-X-STREAM-INF:BANDWIDTH=600000,AUDIO="aac",DEFAULT=YES,RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE
-https://prime.vflix.xyz/cors?url=https%3A//s01.nm-cdn.top/files/81647016/720p/720p.m3u8%3Fin%3Daee7757be1ef402127ef74980fd13f73%3A%3Ad4eb6fb89e08ff9fc69ab4f0231c28c7%3A%3A1729793114%3A%3Ani%0D
+# Audio track
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=YES,AUTOSELECT=YES,URI="https://prime.vflix.xyz/cors?url=https://s01.nm-cdn.top/files/81647016/a/2/2.m3u8"
+
+# Stream with video and associated audio
+#EXT-X-STREAM-INF:BANDWIDTH=600000,RESOLUTION=1280x720,CODECS="avc1.42e01e,mp4a.40.2",AUDIO="audio"
+https://prime.vflix.xyz/cors?url=https://s01.nm-cdn.top/files/81647016/720p/720p.m3u8?in=aee7757be1ef402127ef74980fd13f73::d4eb6fb89e08ff9fc69ab4f0231c28c7::1729793114::ni
